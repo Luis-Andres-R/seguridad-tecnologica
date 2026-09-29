@@ -1,9 +1,9 @@
-function verificarAcceso(usuario) {
-    if (usuario === "administrador") {
+function verificarAcceso(usuario, clave) {
+    if (usuario === "administrador" && clave === "1234") {
         return "Acceso autorizado";
     }
 
     return "Acceso denegado";
 }
 
-console.log(verificarAcceso("administrador"));
+console.log(verificarAcceso("administrador", "1234"));
